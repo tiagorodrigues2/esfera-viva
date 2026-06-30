@@ -1,3 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import "tailwindcss";
+@import 'tailwindcss';
+
+/* ---------------------------------------------------------------------------
+   esferaviva — tokens da linguagem de design (extraídos dos logótipos SVG)
+   --------------------------------------------------------------------------- */
+:root {
+  --ev-bg: #1a221c; /* fundo verde-escuro */
+  --ev-bg-2: #11160f; /* fundo mais profundo (gradiente) */
+  --ev-surface: #212b24; /* cartões/superfícies elevadas */
+  --ev-surface-2: #28332b;
+  --ev-cream: #f7f5ee; /* texto/realce claro */
+  --ev-cream-dim: rgba(247, 245, 238, 0.72);
+  --ev-cream-faint: rgba(247, 245, 238, 0.5);
+  --ev-ink: #1f2a22; /* texto sobre claro */
+  --ev-green: #2f7d52; /* verde primário */
+  --ev-green-bright: #5fbd86; /* verde vivo (sobre escuro) */
+  --ev-line: rgba(247, 245, 238, 0.12); /* contornos subtis */
+
+  --ev-radius: 16px;
+  --ev-radius-lg: 26px;
+  --ev-toolbar-h: 64px;
+
+  --ev-font:
+    'Hanken Grotesk', system-ui, -apple-system, 'Segoe UI', Roboto, Arial,
+    sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background: var(--ev-bg);
+  color: var(--ev-cream);
+  font-family: var(--ev-font);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+@media (max-width: 600px) {
+  :root {
+    --ev-toolbar-h: 56px;
+  }
+}

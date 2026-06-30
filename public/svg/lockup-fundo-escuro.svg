@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="150" viewBox="0 0 520 150" fill="none">
+  <rect width="520" height="150" fill="#1a221c"></rect>
+  <g transform="translate(20 23) scale(0.86)">
+    <circle cx="60" cy="60" r="44" stroke="#f7f5ee" stroke-width="4"></circle>
+    <line x1="60" y1="14" x2="60" y2="106" stroke="#f7f5ee" stroke-width="4"></line>
+    <path d="M60 30 C48 36 41 45 36 57" stroke="#f7f5ee" stroke-width="4" stroke-linecap="round"></path>
+    <path d="M60 30 C72 36 79 45 84 57" stroke="#f7f5ee" stroke-width="4" stroke-linecap="round"></path>
+    <path d="M60 54 C50 60 45 67 41 79" stroke="#5fbd86" stroke-width="4" stroke-linecap="round"></path>
+    <path d="M60 54 C70 60 75 67 79 79" stroke="#5fbd86" stroke-width="4" stroke-linecap="round"></path>
+  </g>
+  <text x="146" y="91" font-family="&#39;Hanken Grotesk&#39;, Arial, sans-serif" font-size="56" letter-spacing="-1">
+    <tspan fill="#f7f5ee" font-weight="500">esfera</tspan><tspan fill="#5fbd86" font-weight="700">viva</tspan>
+  </text>
+</svg>

@@ -2,10 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>EsferaViva</title>
+  <title>esferaviva</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="theme-color" content="#1a221c">
+  <link rel="icon" type="image/svg+xml" href="svg/favicon.svg">
+  <link rel="alternate icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <!-- Indica ao Cesium onde estão os assets estáticos (Workers, texturas,
+       widgets) copiados pelo angular.json para /cesium/. Tem de ser definido
+       antes do Cesium ser importado. -->
+  <script>
+    window.CESIUM_BASE_URL = '/cesium/';
+  </script>
 </head>
 <body>
   <app-root></app-root>
