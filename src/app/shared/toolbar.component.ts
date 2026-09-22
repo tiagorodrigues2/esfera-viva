@@ -5,7 +5,7 @@ import { LogoComponent } from './logo.component';
 
 /**
  * Barra de navegação fixa, presente em todas as rotas. Translúcida com blur,
- * para funcionar tanto sobre a landing como sobreposta ao globo.
+ * para funcionar tanto sobre a landing como sobreposta ao mapa.
  */
 @Component({
   selector: 'app-toolbar',

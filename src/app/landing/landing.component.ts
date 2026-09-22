@@ -5,7 +5,7 @@ import { LogoComponent } from '../shared/logo.component';
 
 /**
  * Página inicial (rota "/"). Hero minimal com a marca e um cartão call-to-action
- * que leva ao globo interativo ("/explorar"). Totalmente responsiva.
+ * que leva ao mapa interativo ("/explorar"). Totalmente responsiva.
  */
 @Component({
   selector: 'app-landing',
@@ -24,13 +24,13 @@ import { LogoComponent } from '../shared/logo.component';
         <a class="cta" routerLink="/explorar">
           <span class="cta__icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none">
-              <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8" />
-              <path d="M3 12h18M12 3c2.5 2.6 2.5 15.4 0 18M12 3c-2.5 2.6-2.5 15.4 0 18" stroke="currentColor" stroke-width="1.8" />
+              <path d="M12 21s7-6.4 7-11.5A7 7 0 0 0 5 9.5C5 14.6 12 21 12 21Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+              <circle cx="12" cy="9.5" r="2.5" stroke="currentColor" stroke-width="1.8" />
             </svg>
           </span>
           <span class="cta__text">
-            <span class="cta__title">Explorar o globo</span>
-            <span class="cta__sub">Navega pela Terra em 3D</span>
+            <span class="cta__title">Explorar o mapa</span>
+            <span class="cta__sub">Abre o mapa interativo</span>
           </span>
           <span class="cta__arrow" aria-hidden="true">→</span>
         </a>

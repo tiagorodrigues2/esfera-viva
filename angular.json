@@ -18,28 +18,15 @@
           "options": {
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
-            "allowedCommonJsDependencies": [
-              "bitmap-sdf",
-              "grapheme-splitter",
-              "lerc",
-              "mersenne-twister",
-              "nosleep.js",
-              "protobufjs/dist/minimal/protobuf.js",
-              "urijs"
-            ],
+            "allowedCommonJsDependencies": ["leaflet"],
             "assets": [
               {
                 "glob": "**/*",
                 "input": "public"
-              },
-              {
-                "glob": "**/*",
-                "input": "node_modules/cesium/Build/Cesium",
-                "output": "cesium/"
               }
             ],
             "styles": [
-              "node_modules/cesium/Build/Cesium/Widgets/widgets.css",
+              "node_modules/leaflet/dist/leaflet.css",
               "src/styles.css"
             ]
           },
@@ -62,13 +49,7 @@
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true,
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.development.ts"
-                }
-              ]
+              "sourceMap": true
             }
           },
           "defaultConfiguration": "production"

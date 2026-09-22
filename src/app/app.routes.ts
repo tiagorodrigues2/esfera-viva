@@ -11,9 +11,9 @@ export const routes: Routes = [
   {
     path: 'explorar',
     title: 'Explorar — esferaviva',
-    // Lazy load: o Cesium (volumoso) só carrega quando se abre o globo,
-    // mantendo a landing page leve e rápida.
+    // Lazy load: o Leaflet só carrega quando se abre o mapa, mantendo a landing
+    // page leve e rápida.
     loadComponent: () =>
-      import('./globe/globe.component').then((m) => m.GlobeComponent),
+      import('./map/map.component').then((m) => m.MapComponent),
   },
 ];
